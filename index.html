@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garrison Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
+    <script src="main.js"></script>
+    
+</head>
+<body>
+    <div class="app">
+        <div class="nav">
+            <div class="logo">GarrisonCalculator</div>
+            <ul class="nav-links">
+                <li class="link">Link<span class="tooltiptext">These links don't do anything (yet!)</span></li>
+                <li class="link">About<span class="tooltiptext">These links don't do anything (yet!)</span></li>
+                <li class="link">Socials<span class="tooltiptext">These links don't do anything (yet!)</span></li>
+            </ul>
+        </div>
+
+        <section class="user-input">
+            <p class="ux-title">I have...</p>
+            <input type="text" class="garrison-input" id="gar-input" type="number" value="0" max="10000">
+            <div class="item-container">
+                <img src="img/garrison_resource.jpg" alt="" class="item-image">
+                <p class="item-name">Garrison Resources</p>
+                <link rel="stylesheet" href="style.css">
+            </div>
+        </section>
+
+        <div class="divider"></div>  
+
+        <section class="results">
+            <p class="ux-title">That means I can get...</p>
+            <div class="items-container">
+                <div class="item-container">
+                    <p class="item-number" id="iron">0</p>
+                    <img src="img/true_iron_ore.jpg" alt="" class="item-image">
+                    <p class="item-name">True Iron Ore</p>
+                </div>
+                <div class="item-container">
+                    <p class="item-number" id="sump">0</p>
+                    <img src="img/sump_fur.jpg" alt="" class="item-image">
+                    <p class="item-name">Sumptuous Fur</p>
+                </div>
+            </div>
+            <p class="ux-title">To craft...</p>
+            <div class="item-container">
+                <p class="item-number" id="glider">0</p>
+                <img src="img/goblin_glider.jpg" alt="" class="item-image">
+                <p class="item-name">Goblin Glider Kits</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
