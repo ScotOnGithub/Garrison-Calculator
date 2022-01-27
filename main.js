@@ -18,9 +18,9 @@ window.onload = function(){
     function updateValue(e){
         //checking for valid input (number 0-9)
         try {
-            e.target.value = e.target.value.match(numbers).join('');
+            e.target.value = removeFirstCharacterWhenZero(e.target.value.match(numbers).join(''));
         } catch (error) {
-            e.target.value = 0;
+            e.target.value = MIN_RESOURCES;
         }
 
         if(e.target.value > MAX_RESOURCES) {
@@ -61,6 +61,20 @@ window.onload = function(){
     
     let calculateGliderAmount = (ironOre) => {
         return Math.floor(ironOre/8)
+    }
+
+    let removeFirstCharacterWhenZero = (number) => {
+        if(number.length > 1){
+            if(number[0] == 0){
+                return number.slice(1, number.length);
+            }
+            else{
+                return number;
+            }
+        }else{
+            return number;
+        }
+        
     }
 
 }
